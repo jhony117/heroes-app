@@ -18,8 +18,13 @@ export class HeroesService {
     return this.http.get<Hero>(`${this.baseUrl}/heroes/${id}`)
     .pipe(
       catchError( error => of(undefined) )
-      //? of de rxjs es una forma de crear observables basado en el valor en sus parentecis 
+      //? of de rxjs es una forma de crear observables basado en el valor en sus parentecis
     )
+  }
+
+  getSuggestions(query :string ):Observable<Hero[]> {     //? endpoint
+      return this.http.get<Hero[]>(`${this.baseUrl}/heroes?q=${query}&_limit=6`);
+
   }
 
 }
