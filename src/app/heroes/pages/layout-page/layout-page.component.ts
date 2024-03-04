@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/app/auth/interfaces/user.interface';
+import { AuthService } from 'src/app/auth/services/auth.service';
 
 @Component({
   selector: 'app-layout-page',
@@ -15,8 +17,8 @@ export class LayoutPageComponent {
     {label : 'Buscar', icon:' search', url: './search'},
    ];
 
-   cosntructor(
-    private authService: AuthService,
+   constructor(
+    private authService:AuthService,
     private router: Router
     ) {}
 
