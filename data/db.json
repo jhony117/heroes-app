@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -21,8 +21,7 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El",
-      "alt_img": "https://th.bing.com/th/id/R.13d53a50eb61fd664f09ad782107f8ee?rik=PfU5VWUlUkn8hA&pid=ImgRaw&r=0"
+      "characters": "Kal-El"
     },
     {
       "id": "dc-flash",
@@ -31,6 +30,22 @@
       "alter_ego": "Jay Garrick",
       "first_appearance": "Flash Comics #1",
       "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
+    },
+    {
+      "id": "dc-green",
+      "superhero": "Green Lantern",
+      "publisher": "DC Comics",
+      "alter_ego": "Alan Scott",
+      "first_appearance": "All-American Comics #16",
+      "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz"
+    },
+    {
+      "id": "dc-arrow",
+      "superhero": "Green Arrow",
+      "publisher": "DC Comics",
+      "alter_ego": "Oliver Queen",
+      "first_appearance": "More Fun Comics #73",
+      "characters": "Oliver Queen"
     },
     {
       "id": "dc-wonder",
@@ -129,6 +144,14 @@
       "characters": "Matthew Michael Murdock"
     },
     {
+      "id": "marvel-hawkeye",
+      "superhero": "Hawkeye",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Clinton Francis Barton",
+      "first_appearance": "Tales of Suspense #57",
+      "characters": "Clinton Francis Barton"
+    },
+    {
       "id": "marvel-cyclops",
       "superhero": "Cyclops",
       "publisher": "Marvel Comics",
@@ -143,15 +166,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "R-4X0Z_",
-      "superhero": "John",
-      "publisher": "DC Comics",
-      "alter_ego": "Jefe",
-      "first_appearance": "The Flood",
-      "characters": "John",
-      "alt_img": "https://th.bing.com/th/id/OIP.RRfq4erc1cac5fbuqmUxswHaH5?w=176&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7"
     }
   ]
 }

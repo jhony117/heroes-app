@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from 'src/app/auth/interfaces/user.interface';
 
 @Component({
   selector: 'app-layout-page',
@@ -12,6 +13,21 @@ export class LayoutPageComponent {
     {label : 'Listado', icon:' label', url: './list'},
     {label : 'Añadir', icon:' add', url: './new-hero'},
     {label : 'Buscar', icon:' search', url: './search'},
-   ]
+   ];
+
+   cosntructor(
+    private authService: AuthService,
+    private router: Router
+    ) {}
+
+   get user():User | undefined{
+   return this.authService.currentUser;
+   }
+
+   onLogout() {
+    this.authService.logout();
+    this.router.navigate(['/auth/login']);
+
+   }
 
 }
